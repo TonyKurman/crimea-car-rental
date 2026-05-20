@@ -356,6 +356,45 @@
       .how-grid { grid-template-columns: 1fr; }
       .hero-h1 { font-size: 44px; }
     }
+
+    /* ===== INTERIOR HOVER REVEAL ===== */
+    .card-img .img-int {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0;
+      transition: opacity .55s cubic-bezier(.22,1,.36,1);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .card:hover .img-int { opacity: 1; }
+    .card-img .int-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      z-index: 6;
+      background: rgba(10,10,10,.72);
+      backdrop-filter: blur(4px);
+      color: rgba(255,255,255,.85);
+      font-size: 8px;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: 5px 11px;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity .4s ease .1s, transform .4s cubic-bezier(.22,1,.36,1) .1s;
+      pointer-events: none;
+    }
+    .card:hover .int-badge { opacity: 1; transform: translateY(0); }
+    /* Fade out exterior smoothly */
+    .card-img img:not(.img-int) {
+      transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .7s ease;
+    }
+    .card:hover .card-img img:not(.img-int) { opacity: 0; }
   </style>
 </head>
 <body>
@@ -445,6 +484,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/kia_rio_white.png" alt="Kia Rio" style="object-position: center 50%;">
+        <img class="img-int" src="images/interiors/int_kia_rio.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
       </div>
       <div class="card-body">
@@ -467,6 +508,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Geely_Binyue_Sport_01_China_2019-03-14.jpg" alt="Geely Coolray">
+        <img class="img-int" src="images/interiors/int_geely.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
       </div>
       <div class="card-body">
@@ -489,6 +532,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/kia_rio_xline.jpeg" alt="Kia Rio X-Line" style="object-position: center 40%;">
+        <img class="img-int" src="images/interiors/int_kia_xline.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
       </div>
       <div class="card-body">
@@ -511,6 +556,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/2021_Hyundai_Creta_1.5_Trend_(SU2id,_Indonesia)_front_view_01.jpg" alt="Hyundai Creta">
+        <img class="img-int" src="images/interiors/int_creta.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Полный привод</div>
       </div>
       <div class="card-body">
@@ -533,6 +580,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/hyundai_solaris.jpeg" alt="Hyundai Solaris" style="object-position: center 30%;">
+        <img class="img-int" src="images/interiors/int_solaris.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
       </div>
       <div class="card-body">
@@ -555,6 +604,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/skoda_rapid.jpeg" alt="Skoda Rapid" style="object-position: center 40%;">
+        <img class="img-int" src="images/interiors/int_skoda.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
       </div>
       <div class="card-body">
@@ -577,6 +628,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Volkswagen_Polo_sedan_2020_%28Russia%2C_front_view_3%29.png" alt="Volkswagen Polo">
+        <img class="img-int" src="images/interiors/int_polo.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
       </div>
       <div class="card-body">
@@ -599,6 +652,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/2023_Chery_Omoda_5_GT_front.jpg" alt="OMODA C5">
+        <img class="img-int" src="images/interiors/int_omoda.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
       </div>
       <div class="card-body">
@@ -606,7 +661,7 @@
         <div class="card-name">OMODA C5</div>
         <div class="specs">
           <div><div class="sp-l">Двигатель</div><div class="sp-v">1.5T Turbo</div></div>
-          <div><div class="sp-l">Мощность</div><div class="sp-v">197 л.с.</div></div>
+          <div><div class="sp-l">Мощность</div><div class="sp-v">155 л.с.</div></div>
           <div><div class="sp-l">КПП</div><div class="sp-v">Вариатор CVT</div></div>
           <div><div class="sp-l">Мест</div><div class="sp-v">5</div></div>
         </div>
@@ -621,6 +676,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://static.tildacdn.com/tild6633-3361-4239-a330-386338313865/_WhatsApp_2025-06-14.jpg" alt="Mustang кабриолет белый">
+        <img class="img-int" src="images/interiors/int_mustang_white.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Хит сезона</div>
       </div>
       <div class="card-body">
@@ -643,6 +700,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://static.tildacdn.com/tild6563-3764-4334-b734-303763666536/WhatsApp_Image_2022-.jpeg" alt="Mustang кабриолет чёрный">
+        <img class="img-int" src="images/interiors/int_mustang_black.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">V8 · GT</div>
       </div>
       <div class="card-body">
@@ -665,6 +724,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="https://static.tildacdn.com/tild3537-3831-4537-b363-613038353138/_WhatsApp_2025-06-14.jpg" alt="Range Rover Evoque">
+        <img class="img-int" src="images/interiors/int_evoque.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Премиум SUV</div>
       </div>
       <div class="card-body">
@@ -687,6 +748,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/mercedes_c300.jpeg" alt="Mercedes C300 Cabriolet" style="object-position: center 35%;">
+        <img class="img-int" src="images/interiors/int_c300.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Топ</div>
       </div>
       <div class="card-body">
@@ -709,6 +772,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/bmw4_blue.jpg" alt="BMW 4 G23 430i" style="object-position: center 50%;">
+        <img class="img-int" src="images/interiors/int_bmw4.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Топ</div>
       </div>
       <div class="card-body">
@@ -731,6 +796,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/mercedes_w212.png" alt="Mercedes E-Class W212" style="object-position: center 35%;">
+        <img class="img-int" src="images/interiors/int_w212.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Бизнес</div>
       </div>
       <div class="card-body">
@@ -753,6 +820,8 @@
     <div class="card rv">
       <div class="card-img">
         <img src="images/jac_t9.png" alt="JAC T9 Pickup" style="object-position: center 40%;">
+        <img class="img-int" src="images/interiors/int_jac.jpg" alt="Интерьер" loading="lazy">
+        <div class="int-badge">Салон</div>
         <div class="card-badge">Пикап</div>
       </div>
       <div class="card-body">
@@ -760,7 +829,7 @@
         <div class="card-name">JAC T9<br>Пикап</div>
         <div class="specs">
           <div><div class="sp-l">Двигатель</div><div class="sp-v">2.0T Бензин</div></div>
-          <div><div class="sp-l">Мощность</div><div class="sp-v">150 л.с.</div></div>
+          <div><div class="sp-l">Мощность</div><div class="sp-v">228 л.с.</div></div>
           <div><div class="sp-l">Привод</div><div class="sp-v">AWD 4×4</div></div>
           <div><div class="sp-l">Мест</div><div class="sp-v">5</div></div>
         </div>
