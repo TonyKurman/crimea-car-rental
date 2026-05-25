@@ -81,8 +81,9 @@
     .routes-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:52px; }
     .route-card { border:1px solid var(--line); background:var(--cream); transition:transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s; }
     .route-card:hover { transform:translateY(-6px); box-shadow:0 20px 50px rgba(0,0,0,.1); }
-    .route-img { height:200px; overflow:hidden; background:linear-gradient(135deg,#1A5F84,#0a3d5c); position:relative; display:flex; align-items:center; justify-content:center; }
-    .route-emoji { font-size:56px; }
+    .route-img { height:220px; overflow:hidden; position:relative; background:#1A5F84; }
+    .route-img img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s cubic-bezier(.22,1,.36,1); }
+    .route-card:hover .route-img img { transform:scale(1.07); }
     .route-dist { position:absolute; top:14px; right:14px; background:var(--gold); color:var(--charcoal); font-size:9px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:5px 11px; }
     .route-body { padding:24px; }
     .route-cat { font-size:9px; letter-spacing:.24em; text-transform:uppercase; color:var(--mid); margin-bottom:8px; }
@@ -202,8 +203,8 @@
   <div class="routes-grid">
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#374151,#6b7280);">
-        <span class="route-emoji">⛰️</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Crimea%2C_Ai-Petri%2C_low_clouds.jpg/1280px-Crimea%2C_Ai-Petri%2C_low_clouds.jpg" alt="Ай-Петри — горное плато над Ялтой, Крым" loading="lazy">
         <div class="route-dist">30 км</div>
       </div>
       <div class="route-body">
@@ -220,8 +221,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#1e3a5f,#2d6a9f);">
-        <span class="route-emoji">🏛️</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Livadia_Palace_Crimea.jpg" alt="Ливадийский дворец — летняя резиденция Николая II, Ялта" loading="lazy">
         <div class="route-dist">3 км</div>
       </div>
       <div class="route-body">
@@ -238,8 +239,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#064e3b,#065f46);">
-        <span class="route-emoji">🌿</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Nikitsky_Botanical_Garden_IMG_3337_1725.jpg" alt="Никитский ботанический сад — вековые деревья и розарий, Крым" loading="lazy">
         <div class="route-dist">8 км</div>
       </div>
       <div class="route-body">
@@ -256,8 +257,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#1e40af,#1d4ed8);">
-        <span class="route-emoji">🏖️</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/View_of_Gurzuf%2C_Ukraine.JPG" alt="Гурзуф — бухты и набережная, Южный берег Крыма" loading="lazy">
         <div class="route-dist">18 км</div>
       </div>
       <div class="route-body">
@@ -274,8 +275,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#78350f,#92400e);">
-        <span class="route-emoji">🏰</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Balaklava_bay.jpg/1280px-Balaklava_bay.jpg" alt="Балаклавская бухта — секретная база подводных лодок, Севастополь" loading="lazy">
         <div class="route-dist">80 км</div>
       </div>
       <div class="route-body">
@@ -292,8 +293,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#7c2d12,#9a3412);">
-        <span class="route-emoji">⚔️</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Sudak%2C_Crimea%2C_The_Genoese_Fortress.jpg" alt="Генуэзская крепость XIV века — Судак, Крым" loading="lazy">
         <div class="route-dist">110 км</div>
       </div>
       <div class="route-body">
@@ -310,8 +311,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#312e81,#4338ca);">
-        <span class="route-emoji">🕌</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Bakhchisarai._Chufut-Kale.jpg/1280px-Bakhchisarai._Chufut-Kale.jpg" alt="Чуфут-Кале — древний пещерный город у Бахчисарая, Крым" loading="lazy">
         <div class="route-dist">130 км</div>
       </div>
       <div class="route-body">
@@ -328,8 +329,8 @@
     </div>
 
     <div class="route-card rv">
-      <div class="route-img" style="background:linear-gradient(135deg,#0c4a6e,#075985);">
-        <span class="route-emoji">🚢</span>
+      <div class="route-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Ukraine_Crimea_Meganom_%2861284650%29.jpeg/1280px-Ukraine_Crimea_Meganom_%2861284650%29.jpeg" alt="Мыс Меганом — дикие бухты и степные пейзажи, Крым" loading="lazy">
         <div class="route-dist">45 км</div>
       </div>
       <div class="route-body">
