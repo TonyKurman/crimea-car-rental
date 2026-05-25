@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://крымавтопрокат.online/sitemap.xml

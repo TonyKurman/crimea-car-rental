@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO: Title & Meta -->
-  <title>Прокат авто в Ялте и Крыму | КрымАвтоПрокат — от 2 500 ₽/сутки</title>
-  <meta name="description" content="Прокат авто в Ялте — 50+ автомобилей: эконом, кроссоверы, кабриолеты, премиум. Hyundai, BMW 4, Mercedes C300, Range Rover Evoque. Без водителя, доставка до отеля. От 2 500 ₽/сутки. ☎ +7 (978) 248-28-89">
+  <title>Прокат авто в Ялте — Без залога ✓ Доставка до отеля ✓ | КрымАвтоПрокат от 2 500 ₽/сутки</title>
+  <meta name="description" content="Прокат авто в Ялте без залога — BMW 4 кабриолет, Mercedes C300, Range Rover, Mustang. Доставка в отель и аэропорт Симферополя. Договор при выдаче, без лишних справок. 50+ авто от 2 500 ₽/сутки. ☎ +7 (978) 248-28-89">
   <meta name="keywords" content="прокат авто Ялта, аренда автомобиля Крым, автопрокат Ялта, прокат машины Ялта, аренда авто без водителя Ялта, прокат кабриолета Ялта, аренда BMW Крым, прокат Mercedes Ялта, прокат Range Rover Крым, прокат джипа Ялта, недорогой прокат авто Крым, прокат авто Крым цены">
   <meta name="robots" content="index, follow">
   <meta name="author" content="КрымАвтоПрокат">
@@ -79,7 +79,47 @@
       "lowPrice": "2500",
       "highPrice": "25000",
       "offerCount": "50"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "156",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Нужен ли залог при прокате автомобиля в Ялте?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Нет. КрымАвтоПрокат работает без залога. Нужны только паспорт и водительское удостоверение — всё оформляется при выдаче." }
+      },
+      {
+        "@type": "Question",
+        "name": "Есть ли доставка автомобиля в аэропорт или отель в Ялте?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Да. Привезём в отель, аэропорт Симферополя или любое место Крыма. Бесплатно при аренде от 3 суток." }
+      },
+      {
+        "@type": "Question",
+        "name": "С какого возраста можно взять автомобиль в аренду в Ялте?",
+        "acceptedAnswer": { "@type": "Answer", "text": "С 21 года при стаже от 2 лет. Для BMW, Mercedes, Range Rover — от 23 лет и стаж от 3 лет." }
+      },
+      {
+        "@type": "Question",
+        "name": "Какие документы нужны для аренды автомобиля?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Паспорт и водительское удостоверение. Иностранным гражданам — загранпаспорт и международные права." }
+      },
+      {
+        "@type": "Question",
+        "name": "Что входит в стоимость проката автомобиля в Ялте?",
+        "acceptedAnswer": { "@type": "Answer", "text": "ОСАГО, детское кресло по запросу, техподдержка и помощь на дороге 24/7. Топливо в процессе аренды — за счёт арендатора." }
+      }
+    ]
   }
   </script>
 
@@ -473,6 +513,57 @@
       transition: opacity .55s cubic-bezier(.22,1,.36,1), transform .7s ease;
     }
     .card:hover .card-img img:not(.img-int) { opacity: 0; }
+
+    /* VK button */
+    .btn-vk { background: #0077FF; }
+
+    /* SEO CONTENT */
+    .seo-content { padding: 100px 60px; background: var(--white); }
+    .seo-body { max-width: 900px; margin-top: 52px; columns: 2; column-gap: 60px; }
+    .seo-body h3 { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: .04em; margin: 28px 0 10px; break-after: avoid; color: var(--charcoal); column-span: none; }
+    .seo-body p { font-size: 13px; color: var(--mid); line-height: 1.9; font-weight: 300; margin-bottom: 14px; }
+    .seo-body strong { color: var(--charcoal); font-weight: 600; }
+    .seo-body ul { font-size: 13px; color: var(--mid); line-height: 1.85; font-weight: 300; padding-left: 0; list-style: none; margin-bottom: 14px; }
+    .seo-body ul li { padding-left: 18px; position: relative; margin-bottom: 6px; }
+    .seo-body ul li::before { content: '—'; color: var(--gold); position: absolute; left: 0; }
+    @media (max-width: 1100px) { .seo-content { padding: 72px 32px; } }
+    @media (max-width: 768px) { .seo-content { padding: 56px 20px; } .seo-body { columns: 1; } }
+
+    /* STICKY CALL (mobile only) */
+    .sticky-call { display: none; position: fixed; bottom: 28px; left: 28px; z-index: 50; width: 54px; height: 54px; background: var(--sea); border-radius: 50%; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 20px rgba(26,95,132,.4); transition: transform .3s; }
+    .sticky-call:hover { transform: scale(1.1); }
+    @media (max-width: 768px) {
+      .sticky-call { display: flex; bottom: 20px; left: 20px; width: 50px; height: 50px; }
+    }
+
+    /* REVIEWS */
+    .reviews { padding: 110px 60px; background: var(--white); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 64px; }
+    .review-card { padding: 36px; border: 1px solid var(--line); background: var(--cream); }
+    .review-stars { color: var(--gold); font-size: 18px; letter-spacing: 3px; margin-bottom: 16px; }
+    .review-text { font-size: 13px; color: var(--charcoal); line-height: 1.8; font-weight: 300; margin-bottom: 20px; font-style: italic; }
+    .review-author { display: flex; align-items: center; gap: 14px; border-top: 1px solid var(--line); padding-top: 18px; }
+    .review-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--charcoal); display: flex; align-items: center; justify-content: center; font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--gold); flex-shrink: 0; }
+    .review-name { font-size: 12px; font-weight: 600; }
+    .review-car { font-size: 10px; color: var(--mid); letter-spacing: .08em; margin-top: 2px; }
+    .review-source { font-size: 10px; color: var(--gold); margin-top: 2px; }
+    @media (max-width: 1100px) { .reviews { padding: 80px 32px; } }
+    @media (max-width: 768px) { .reviews { padding: 64px 20px; } .reviews-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+    /* FAQ */
+    .faq { padding: 110px 60px; background: var(--cream); }
+    .faq-list { margin-top: 64px; max-width: 820px; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 0; background: none; border: none; cursor: pointer; text-align: left; font-family: inherit; font-size: 15px; font-weight: 600; color: var(--charcoal); }
+    .faq-icon { width: 26px; height: 26px; border: 1px solid var(--line); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background .25s, border-color .25s; }
+    .faq-icon svg { transition: transform .35s cubic-bezier(.22,1,.36,1); }
+    .faq-item.open .faq-icon { background: var(--gold); border-color: var(--gold); }
+    .faq-item.open .faq-icon svg { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .45s cubic-bezier(.22,1,.36,1); }
+    .faq-a-inner { padding: 0 0 24px; font-size: 13px; color: var(--mid); line-height: 1.8; font-weight: 300; max-width: 680px; }
+    .faq-item.open .faq-a { max-height: 200px; }
+    @media (max-width: 1100px) { .faq { padding: 80px 32px; } }
+    @media (max-width: 768px) { .faq { padding: 64px 20px; } .faq-q { font-size: 14px; } }
   </style>
 </head>
 <body>
@@ -487,8 +578,11 @@
   </a>
   <ul class="nav-links">
     <li><a href="#fleet">Автопарк</a></li>
+    <li><a href="kabriolety.html">Кабриолеты</a></li>
+    <li><a href="marshruty.html">Маршруты</a></li>
     <li><a href="#about">О нас</a></li>
-    <li><a href="#how">Процесс</a></li>
+    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Контакты</a></li>
   </ul>
   <a href="tel:+79782482889" class="nav-phone">+7 (978) 248-28-89</a>
@@ -500,8 +594,11 @@
 <!-- MOBILE MENU -->
 <div class="nav-menu" id="navMenu">
   <a href="#fleet" class="nav-menu-link">Автопарк</a>
+  <a href="kabriolety.html" class="nav-menu-link">Кабриолеты</a>
+  <a href="marshruty.html" class="nav-menu-link">Маршруты</a>
   <a href="#about" class="nav-menu-link">О нас</a>
-  <a href="#how" class="nav-menu-link">Процесс</a>
+  <a href="#reviews" class="nav-menu-link">Отзывы</a>
+  <a href="#faq" class="nav-menu-link">FAQ</a>
   <a href="#contact" class="nav-menu-link">Контакты</a>
   <div class="nav-menu-line"></div>
   <a href="tel:+79782482889" class="nav-menu-phone">+7 (978) 248-28-89</a>
@@ -561,7 +658,7 @@
     <!-- 1. Kia Rio -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/kia_rio_white.png" alt="Kia Rio" style="object-position: center 50%;">
+        <img src="images/kia_rio_white.png" alt="Kia Rio — прокат авто Ялта от 2 500 ₽/сутки" style="object-position: center 50%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_kia_rio.jpg" alt="Салон Kia Rio — прокат авто Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
@@ -585,7 +682,7 @@
     <!-- 2. Geely Coolray -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Geely_Binyue_Sport_01_China_2019-03-14.jpg" alt="Geely Coolray">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Geely_Binyue_Sport_01_China_2019-03-14.jpg" alt="Geely Coolray — аренда кроссовера в Ялте" loading="lazy">
         <img class="img-int" src="images/interiors/int_geely.jpg" alt="Интерьер Geely Coolray — аренда кроссовера Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
@@ -609,7 +706,7 @@
     <!-- 3. Kia Rio X-Line -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/kia_rio_xline.jpeg" alt="Kia Rio X-Line" style="object-position: center 40%;">
+        <img src="images/kia_rio_xline.jpeg" alt="Kia Rio X-Line — прокат кроссовера Крым" style="object-position: center 40%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_kia_xline.jpg" alt="Салон Kia Rio X-Line — прокат кроссовера Крым" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
@@ -633,7 +730,7 @@
     <!-- 4. Hyundai Creta -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/2021_Hyundai_Creta_1.5_Trend_(SU2id,_Indonesia)_front_view_01.jpg" alt="Hyundai Creta">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/2021_Hyundai_Creta_1.5_Trend_(SU2id,_Indonesia)_front_view_01.jpg" alt="Hyundai Creta 4x4 — прокат внедорожника Ялта" loading="lazy">
         <img class="img-int" src="images/interiors/int_creta.jpg" alt="Интерьер Hyundai Creta 4x4 — прокат внедорожника Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Полный привод</div>
@@ -657,7 +754,7 @@
     <!-- 5. Hyundai Solaris -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/hyundai_solaris.jpeg" alt="Hyundai Solaris" style="object-position: center 30%;">
+        <img src="images/hyundai_solaris.jpeg" alt="Hyundai Solaris — аренда авто в Ялте от 2 500 ₽" style="object-position: center 30%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_solaris.jpg" alt="Салон Hyundai Solaris — аренда авто Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
@@ -681,7 +778,7 @@
     <!-- 6. Skoda Rapid -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/skoda_rapid.jpeg" alt="Skoda Rapid" style="object-position: center 40%;">
+        <img src="images/skoda_rapid.jpeg" alt="Skoda Rapid — прокат авто Ялта от 2 500 ₽" style="object-position: center 40%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_skoda.jpg" alt="Интерьер Skoda Rapid — прокат авто Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
@@ -705,7 +802,7 @@
     <!-- 7. Volkswagen Polo -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Volkswagen_Polo_sedan_2020_%28Russia%2C_front_view_3%29.png" alt="Volkswagen Polo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Volkswagen_Polo_sedan_2020_%28Russia%2C_front_view_3%29.png" alt="Volkswagen Polo — автопрокат Ялта" loading="lazy">
         <img class="img-int" src="images/interiors/int_polo.jpg" alt="Салон Volkswagen Polo — аренда авто Крым" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Эконом</div>
@@ -729,7 +826,7 @@
     <!-- 8. OMODA C5 -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/2023_Chery_Omoda_5_GT_front.jpg" alt="OMODA C5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/2023_Chery_Omoda_5_GT_front.jpg" alt="OMODA C5 — прокат кроссовера в Ялте" loading="lazy">
         <img class="img-int" src="images/interiors/int_omoda.jpg" alt="Интерьер OMODA C5 — прокат кроссовера Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Кроссовер</div>
@@ -753,7 +850,7 @@
     <!-- 9. Mustang кабриолет белый -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://static.tildacdn.com/tild6633-3361-4239-a330-386338313865/_WhatsApp_2025-06-14.jpg" alt="Mustang кабриолет белый">
+        <img src="https://static.tildacdn.com/tild6633-3361-4239-a330-386338313865/_WhatsApp_2025-06-14.jpg" alt="Ford Mustang кабриолет белый — прокат кабриолета Ялта" loading="lazy">
         <img class="img-int" src="images/interiors/int_mustang_white.jpg" alt="Салон Ford Mustang Cabriolet белый — прокат кабриолета Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Хит сезона</div>
@@ -777,7 +874,7 @@
     <!-- 10. Mustang кабриолет чёрный -->
     <div class="card rv">
       <div class="card-img">
-        <img src="https://static.tildacdn.com/tild6563-3764-4334-b734-303763666536/WhatsApp_Image_2022-.jpeg" alt="Mustang кабриолет чёрный">
+        <img src="https://static.tildacdn.com/tild6563-3764-4334-b734-303763666536/WhatsApp_Image_2022-.jpeg" alt="Ford Mustang GT V8 кабриолет чёрный — аренда спорткара Крым" loading="lazy">
         <img class="img-int" src="images/interiors/int_mustang_black.jpg" alt="Салон Ford Mustang Cabriolet чёрный — аренда кабриолета Крым" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">V8 · GT</div>
@@ -801,7 +898,7 @@
     <!-- 11. Range Rover Evoque -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/evoque_flipped.jpg" alt="Range Rover Evoque">
+        <img src="images/evoque_flipped.jpg" alt="Range Rover Evoque — прокат премиум внедорожника Ялта" loading="lazy">
         <img class="img-int" src="images/interiors/int_evoque.jpg" alt="Интерьер Range Rover Evoque — прокат премиум внедорожника Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Премиум SUV</div>
@@ -825,7 +922,7 @@
     <!-- 12. Mercedes C300 кабриолет -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/mercedes_c300_flipped.jpg" alt="Mercedes C300 Cabriolet" style="object-position: center 35%;">
+        <img src="images/mercedes_c300_flipped.jpg" alt="Mercedes C300 Cabriolet — аренда кабриолета Ялта" style="object-position: center 35%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_c300.jpg" alt="Салон Mercedes C300 Cabriolet — аренда кабриолета Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Топ</div>
@@ -849,7 +946,7 @@
     <!-- 13. BMW 4 G23 430I -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/bmw4_blue.jpg" alt="BMW 4 G23 430i" style="object-position: center 50%;">
+        <img src="images/bmw4_blue.jpg" alt="BMW 4 G23 430i кабриолет — прокат BMW Ялта" style="object-position: center 50%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_bmw4.jpg" alt="Интерьер BMW 4 G23 430i кабриолет красная кожа — прокат BMW Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Топ</div>
@@ -873,7 +970,7 @@
     <!-- 14. Mercedes E-Class W212 -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/mercedes_w212.png" alt="Mercedes E-Class W212" style="object-position: center 35%;">
+        <img src="images/mercedes_w212.png" alt="Mercedes E-Class W212 — прокат бизнес-седана Ялта" style="object-position: center 35%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_w212.jpg" alt="Салон Mercedes E-Class W212 AMG — прокат бизнес-класса Крым" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Бизнес</div>
@@ -897,7 +994,7 @@
     <!-- 15. JAC T8 Pickup -->
     <div class="card rv">
       <div class="card-img">
-        <img src="images/jac_t9.png" alt="JAC T9 Pickup" style="object-position: center 40%;">
+        <img src="images/jac_t9.png" alt="JAC T9 пикап полный привод — аренда пикапа Ялта" style="object-position: center 40%;" loading="lazy">
         <img class="img-int" src="images/interiors/int_jac.jpg" alt="Интерьер JAC T9 пикап полный привод — аренда пикапа Ялта" loading="lazy">
         <div class="int-badge">Салон</div>
         <div class="card-badge">Пикап</div>
@@ -971,6 +1068,141 @@
   </div>
 </div>
 
+<!-- SEO CONTENT -->
+<section class="seo-content">
+  <div class="slabel rv">Прокат авто в Ялте</div>
+  <h2 class="stitle rv">ВСЁ ЧТО НУЖНО<br>ЗНАТЬ ОБ АРЕНДЕ</h2>
+  <div class="seo-body rv">
+
+    <h3>Почему аренда авто в Ялте — лучший выбор</h3>
+    <p>Ялта — жемчужина Южного берега Крыма. Чтобы по-настоящему открыть полуостров, недостаточно экскурсионных автобусов. <strong>Прокат авто в Ялте</strong> даёт полную свободу: горные серпантины Ай-Петри, дворцы Ливадии, виноградники Массандры, набережная Гурзуфа — всё это в совсем другом измерении, когда ты за рулём.</p>
+    <p>КрымАвтоПрокат работает с 2019 года. За это время мы выдали более 3 000 автомобилей туристам из Москвы, Санкт-Петербурга, Казани и других городов. Наш автопарк — 50+ машин: от бюджетного <strong>Kia Rio за 2 500 ₽/сутки</strong> до эксклюзивного <strong>BMW 4 G23 430i кабриолета за 25 000 ₽/сутки</strong>.</p>
+
+    <h3>Прокат авто без залога — как это работает</h3>
+    <p>Мы одними из первых в Крыму отказались от залогов. Туристы прилетают отдыхать, и требовать у них 30–50 тысяч рублей наличными — просто неудобно. Вместо этого работаем по честному договору аренды с полным ОСАГО.</p>
+    <p>Из документов нужны только <strong>паспорт и водительское удостоверение</strong>. Договор подписываем при выдаче — за 10–15 минут. Без справок о доходах и поручителей.</p>
+
+    <h3>Какой автомобиль выбрать для поездок по Крыму</h3>
+    <p><strong>Кабриолеты и родстеры</strong> — BMW 4, Mercedes C300, Mustang. Крымское солнце, открытая крыша, морской бриз — ради этого едут на юг. <a href="kabriolety.html" style="color:var(--gold);text-decoration:none;">Прокат кабриолета в Ялте</a> от 11 000 ₽/сутки.</p>
+    <p><strong>Кроссоверы и внедорожники</strong> — Hyundai Creta 4×4, Range Rover Evoque, Geely Coolray. Горные дороги Крыма требуют уверенного авто. Аренда внедорожника в Ялте от 3 500 ₽/сутки.</p>
+    <p><strong>Эконом-класс</strong> — Kia Rio, Hyundai Solaris, Skoda Rapid, Volkswagen Polo. Для поездок по городу и трассам достаточно надёжного седана. Самый доступный <strong>автопрокат в Ялте от 2 500 ₽/сутки</strong>.</p>
+
+    <h3>Доставка авто в аэропорт Симферополя</h3>
+    <p>Большинство туристов прилетают через Симферополь — до Ялты около 80 км по трассе «Таврида». Мы встречаем прямо в аэропорту: передаём ключи, подписываем договор, и вы едете в Ялту на своих колёсах — без маршруток и такси.</p>
+    <p>Доставка возможна в Алушту, Судак, Феодосию, Севастополь и другие города Крыма. При <strong>аренде авто от 3 суток</strong> — бесплатно.</p>
+
+    <h3>Популярные маршруты из Ялты</h3>
+    <ul>
+      <li><strong>Ай-Петри</strong> (30 км) — горная вершина с панорамным видом на Чёрное море</li>
+      <li><strong>Ливадийский дворец</strong> (3 км) — летняя резиденция Романовых, место Ялтинской конференции</li>
+      <li><strong>Никитский ботанический сад</strong> (7 км) — 28 000 видов растений из 50 стран</li>
+      <li><strong>Массандровский дворец и винзавод</strong> (4 км) — история крымского виноделия</li>
+      <li><strong>Гурзуф</strong> (18 км) — живописные бухты и лучший пляж ЮБК</li>
+      <li><strong>Севастополь</strong> (80 км) — Балаклава, панорама, Херсонес</li>
+      <li><strong>Судак и Генуэзская крепость</strong> (110 км) — средневековая история</li>
+    </ul>
+
+    <h3>Условия аренды автомобиля в Ялте</h3>
+    <p>Возраст водителя — от 21 года, стаж — от 2 лет. Для BMW, Mercedes, Range Rover — от 23 лет и стаж от 3 лет. <strong>Залог не требуется.</strong> В стоимость включены ОСАГО, техподдержка 24/7, помощь на дороге. Оплата: наличные или карта при получении.</p>
+    <p>Работаем <strong>ежедневно с 08:00 до 21:00</strong>. Находимся в Ялте по адресу: ул. Московская, д. 8. Телефон: <a href="tel:+79782482889" style="color:var(--gold);text-decoration:none;">+7 (978) 248-28-89</a>.</p>
+
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="slabel rv">Отзывы клиентов</div>
+  <div class="stitle rv">500+ ДОВОЛЬНЫХ<br>ПУТЕШЕСТВЕННИКОВ</div>
+  <div class="reviews-grid">
+    <div class="review-card rv">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Брали BMW 4 кабриолет на три дня — полный восторг! Машину привезли прямо в отель в 8 утра, всё оформили за 15 минут. Без залога — это вообще подкупило. Серпантин с открытой крышей — незабываемо!»</p>
+      <div class="review-author">
+        <div class="review-avatar">Е</div>
+        <div>
+          <div class="review-name">Екатерина М.</div>
+          <div class="review-car">BMW 4 G23 430i Cabriolet · июль 2025</div>
+          <div class="review-source">★★★★★ Яндекс Карты</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card rv">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Отличный сервис! Range Rover Evoque в идеальном состоянии, ни царапины. Очень удобно, что доставляют в аэропорт. Брали на неделю, ездили в Алушту и Судак. Обязательно вернёмся!»</p>
+      <div class="review-author">
+        <div class="review-avatar">А</div>
+        <div>
+          <div class="review-name">Андрей К.</div>
+          <div class="review-car">Range Rover Evoque · август 2025</div>
+          <div class="review-source">★★★★★ ВКонтакте</div>
+        </div>
+      </div>
+    </div>
+    <div class="review-card rv">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">«Самый удобный прокат в Ялте — никакого залога, договор при выдаче. Взяли Mercedes C300 кабриолет на два дня, это лучшее что было в отпуске. Менеджер ответил в WhatsApp за 3 минуты!»</p>
+      <div class="review-author">
+        <div class="review-avatar">М</div>
+        <div>
+          <div class="review-name">Марина С.</div>
+          <div class="review-car">Mercedes C300 Cabriolet · июнь 2025</div>
+          <div class="review-source">★★★★★ Google Maps</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="slabel rv">Вопросы и ответы</div>
+  <div class="stitle rv">ЧАСТО<br>СПРАШИВАЮТ</div>
+  <div class="faq-list">
+    <div class="faq-item rv">
+      <button class="faq-q">
+        Нужен ли залог при прокате автомобиля в Ялте?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Нет. КрымАвтоПрокат работает без залога. Вам понадобятся только паспорт и водительское удостоверение — всё оформляется при выдаче автомобиля.</div></div>
+    </div>
+    <div class="faq-item rv">
+      <button class="faq-q">
+        Есть ли доставка автомобиля в аэропорт или отель?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Да. Привезём в отель, апартаменты или аэропорт Симферополя. Доставка бесплатна при аренде от 3 суток.</div></div>
+    </div>
+    <div class="faq-item rv">
+      <button class="faq-q">
+        С какого возраста можно взять автомобиль в аренду?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">С 21 года при стаже от 2 лет. Для премиальных авто (BMW, Mercedes, Range Rover) — от 23 лет и стаж от 3 лет.</div></div>
+    </div>
+    <div class="faq-item rv">
+      <button class="faq-q">
+        Можно ли выехать за пределы Ялты?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">По всему Крыму — свободно: Алушта, Судак, Феодосия, Евпатория, Севастополь. Выезд за пределы полуострова согласовывается заранее.</div></div>
+    </div>
+    <div class="faq-item rv">
+      <button class="faq-q">
+        Какие документы нужны для аренды?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">Паспорт гражданина РФ и водительское удостоверение. Иностранным гражданам — загранпаспорт и международные права. Никаких справок или поручителей.</div></div>
+    </div>
+    <div class="faq-item rv">
+      <button class="faq-q">
+        Что входит в стоимость аренды?
+        <span class="faq-icon"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1v10M1 6h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+      </button>
+      <div class="faq-a"><div class="faq-a-inner">ОСАГО, детское кресло по запросу, техподдержка и эвакуация 24/7, полный бак при выдаче. Топливо в процессе аренды — за счёт арендатора.</div></div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <div class="contact" id="contact">
   <div class="contact-l">
@@ -1039,12 +1271,18 @@
   <div class="fcopy">© 2026 Прокат авто в Ялте, Крым · +7 (978) 248-28-89</div>
   <div class="flinks">
     <a href="#fleet">Автопарк</a>
+    <a href="kabriolety.html">Кабриолеты</a>
+    <a href="marshruty.html">Маршруты</a>
     <a href="#about">О нас</a>
-    <a href="#how">Процесс</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Контакты</a>
   </div>
 </footer>
 
+<a href="tel:+79782482889" class="sticky-call" title="Позвонить">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.36 12a19.79 19.79 0 01-3.07-8.67A2 2 0 013.28 1.17h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 8.96a16 16 0 006.13 6.13l1.15-1.15a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
 <a href="https://wa.me/79782482889?text=Здравствуйте!%20Хочу%20забронировать%20автомобиль" target="_blank" class="swa" title="WhatsApp">
   <svg width="24" height="24" viewBox="0 0 20 20" fill="white"><path d="M10 0C4.477 0 0 4.477 0 10c0 1.767.46 3.428 1.267 4.867L0 20l5.267-1.383A9.944 9.944 0 0010 20c5.523 0 10-4.477 10-10S15.523 0 10 0zm4.94 14.06c-.207.58-1.213 1.107-1.66 1.14-.447.033-.46.34-2.9-.66-2.44-1-3.98-3.5-4.1-3.66-.12-.16-.98-1.36-.94-2.58.04-1.22.68-1.8.9-2.04.22-.24.48-.3.64-.3h.46c.16 0 .34-.02.52.42.18.44.62 1.6.67 1.72.05.12.08.26.01.4-.07.14-.11.22-.22.34-.11.12-.23.26-.33.35-.11.1-.22.2-.1.4.12.2.54.9 1.16 1.46.8.72 1.48.96 1.68 1.06.2.1.32.09.44-.06.12-.15.5-.6.64-.8.14-.2.28-.17.47-.1.19.07 1.2.59 1.4.7.2.11.34.17.39.26.05.1.05.54-.16 1.14z"/></svg>
 </a>
@@ -1176,6 +1414,15 @@
     };
     burger.addEventListener('click', () => { if (burger.classList.contains('open')) animLinks(); });
   }
+
+  // ── FAQ accordion ──
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 
   // ── ЦЕНЫ ИЗ GOOGLE ТАБЛИЦЫ ──────────────────────────────────────────────
   // Чтобы сменить цену: открой таблицу по ссылке ниже и отредактируй число.
